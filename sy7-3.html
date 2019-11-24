@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录界面</title>
+	<style>
+		body{
+			background:url("images/背景.png") no-repeat top center;
+			padding:50px 0 0 860px;
+		}
+		form{
+			width:260px;
+			height:240px;
+			background-color:#D;
+			padding:0px 0px;
+			border:1px solid #DDD;
+			margin-top:310px;
+			
+		}
+		input{
+			display:block;
+			color:#FE00FF;
+		}
+		[type="text"],[type="password"]{
+			width:250px;
+			height:38px;
+			border:1px solid #DDD;
+			margin-bottom:30px;
+			font-size:16px;
+			text-indent:50px;
+		}
+		[type="text"]{
+			background: url("images/zhanghao.jpg") no-repeat 0 -2px;
+		}
+		[type="password"]{
+			background: url("images/mima.jpg") no-repeat 0 -2px;
+		}
+		[type="checkbox"]{
+			display:inline;
+			vertical-align:middle;
+		}
+		label{
+			font-size:12px;
+			color:#5AB0F8;
+		}
+		.reg{
+			text-align:center;
+			font-size:12px;
+			margin-top:-18px;
+		}
+		.reg a{
+			color:#FF0004;
+			text-decoration:none;
+		}
+		.reg a:hover{
+			color:#0288E4;
+			text-decoration:underline;
+		}
+		[type="submit"]{
+			width:255px;
+			height:44px;
+			margin:25px auto;
+			background-image:url("images/but.jpg");
+			border:none;
+		}
+		.a{
+			color:cyan
+		}
+	</style>
+</head>
+
+<body>
+	<h1><a>Your Name</a></h1>
+	<form action="#" method="post" name="form">
+		<input type="text" name="user" placeholder="用户名/邮箱地址/手机号">
+		<input type="password" name="password" placeholder="填写密码">
+		<input type="checkbox" name="account" value="1" id="account">
+		<label for="account">记住账号</label>
+		<div class="reg">
+			<a href="#">欢迎注册</a>
+			<a href="#">忘记密码</a>
+		</div>
+		<input type="submit" name="submit" value="">
+	</form>
+</body>
+</html>
